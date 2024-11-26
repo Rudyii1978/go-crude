@@ -1,0 +1,21 @@
+.options {
+	opacity: 0;
+	pointer-events: none;
+	transform: translateX(-50%);
+	transition: 200ms ease-out;
+}
+
+.options.enable {
+	opacity: 1;
+	pointer-events: all;
+	transform: translateX(0);
+}
+
+#form {
+	max-width: 500px;
+}
+
+#logo {
+	aspect-ratio: 1/1;
+	width: 10rem;
+}

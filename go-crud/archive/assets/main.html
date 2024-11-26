@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multistep form</title>
+  <script src="/assets/script.js" defer></script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body>
+        <form action="#">
+			<section class="student_details">
+				<label for="receipt">Receipt Number:</label>
+				<input type="number" id="receipt" placeholder="21086233" />
+
+				<div class="form_title">HELSB/SL/FORM 2/2822</div>
+				<h2 class="title">
+					HELSB Higher Education Loans and Scholarships Board
+				</h2>
+
+				<div class="distribution">
+					<p>Distribution</p>
+					<p>Copy - Student</p>
+					<p>Copy - Student File</p>
+					<p>Copy - Student Finance</p>
+				</div>
+
+				<label for="program"> Programme of Study </label>
+				<!-- Get searchable dropdown from bootstrap -->
+				<input type="text" placeholder="Mining Engineering" />
+				<!-- YearOfStudy -->
+				<label for="year_of_study">Current Year of Study</label>
+				<select name="year_of_study" id="year_of_study">
+					<option value="1" aria-selected="true">First</option>
+					<option value="2">Second</option>
+					<option value="3">Third</option>
+					<option value="4">Fourth</option>
+					<option value="5">Fifth</option>
+				</select>
+				<!-- Student ID -->
+				<label for="student_id">University Student Identity No.:</label>
+				<input name="student_id" type="number" placeholder="2020123456" />
+				<!-- Loan Number -->
+				<label for="loan_number">Student Loan No.:</label>
+				<input
+					name="loan_number"
+					type="text"
+					placeholder="S# 21106530653 "
+				/>
+				<!-- NRC -->
+				<label for="nrc">NRC/No.:</label>
+				<div class="nrc">
+					<input
+						name="nrc"
+						type="number"
+						maxlength="6"
+						placeholder="469538"
+					/>/
+					<input
+						name="nrc"
+						type="number"
+						maxlength="2"
+						placeholder="16"
+					/>/
+					<input name="nrc" type="number" maxlength="1" placeholder="1" />
+				</div>
+				<!-- Bank Name -->
+				<label for="bank_name">Name of Bank:</label>
+				<input
+					name="bank_name"
+					type="text"
+					placeholder="First National Bank (FNB)"
+				/>
+				<!-- Bank Branch -->
+				<label for="bank_branch">Name of Branch:</label>
+				<input name="bank_branch" type="text" placeholder="Mazabuka" />
+				<!-- Bank Account Number -->
+				<label for="account_number">Bank Account No.:</label>
+				<input
+					name="account_number"
+					type="12345678910"
+					placeholder="2020123456"
+				/>
+			</section>
+
+			<section class="agreement_form">
+				<h3 class="title">Student Agreement Form</h3>
+				<div class="body">
+					An agreement made and entered into between the Higher Education
+					Loans and Scholarships Board, (herein called the Loans Board) of
+					the first part; and
+					<input
+						type="text"
+						name="student_name"
+						id="student_name"
+						placeholder="Student Name"
+					/>(hereinafter called the Student) of the second part;
+					<br />
+					WHEREAS, the student wishes to pursue a course of studies at
+					<input
+						type="text"
+						name="university"
+						id="university"
+						placeholder="The University of Zambia"
+					/>
+					(Hereinafter called the Institution) for purpose of acquiring the
+					qualification of
+					<input
+						type="text"
+						name="student_program"
+						id="student_program"
+						placeholder="Student Program"
+					/>
+					in the School of
+					<input
+						type="text"
+						name="school"
+						id="school"
+						placeholder="School"
+					/>
+					<br />
+					AND WHEREAS, the student has applied to the Loans Board for a
+					loan to enable him/her to attend the institution for that
+					purpose:
+					<br />
+					NOW THEREFORE, in consideration of the undertaking by the student
+					herein contained, the Board grants to the student such a loan by
+					making payment for the following:
+					<br />
+					<ol style="list-style-type: lower-alpha">
+						<li>
+							A stipulated amount of tuition fees paid directly to the
+							university
+						</li>
+						<li>
+							A stipulated amount of accommodation fee paid directly to
+							the university
+						</li>
+					</ol>
+
+					NOTE: Any amount payable to the student is determined by the
+					Board at the time of application, and is not negotiable by the
+					student or students' union.
+				</div>
+				<section class="conditions_of_agreement">
+					<h3 class="title">Conditions of the Loan Agreement</h3>
+					<div class="body">
+						<ul style="list-style-type: none">
+							<li>
+								a) The loan is only valid for one academic year/semester
+								but may be renewed on application after production of
+								satisfactory academic results;
+							</li>
+							<li>
+								b) Part of the loan due to the student shall include
+								payment towards insurance of the loan;
+							</li>
+							<li>
+								c) Part of the loan due to the student may be paid to
+								the beneficiary through a bank account as funds become
+								available;
+							</li>
+							<li>
+								d) Students awarded the loan are expected to meet any
+								shortfall not covered by the loan;
+							</li>
+							<li>
+								e) Students in receipt of the loan or scholarship
+								provided by the Board will not qualify for any other
+								offer at the same level of qualification.
+							</li>
+							<li>
+								f) The loan is given to obtain one study programme and
+								it will not be extended to enable students to undertake
+								an additional or higher qualification than that for
+								which the selection was made.
+							</li>
+						</ul>
+						NOTE: The Board will only effect the loan if the student shows
+						evidence of registration with the university and has a valid
+						bank account.
+					</div>
+				</section>
+			</section>
+		</form>
+    </body>
+</html>

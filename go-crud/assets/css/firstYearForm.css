@@ -1,0 +1,24 @@
+li {
+	padding-bottom: 1rem;
+}
+li::marker {
+	font-weight: bold;
+}
+section h2 {
+	text-transform: uppercase;
+}
+
+img {
+	aspect-ratio: 2/0.825;
+	height: 100px;
+	filter: grayscale();
+}
+
+.inline-input {
+	border: none;
+	border-bottom: 1px dotted;
+	border-radius: 5px;
+	outline: none;
+	text-align: center;	
+	height: 1.5rem;
+}
