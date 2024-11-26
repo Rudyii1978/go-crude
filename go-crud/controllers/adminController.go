@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/fachi-r/go-crud/database"
-	"github.com/fachi-r/go-crud/models"
+	"github.com/Rudyii1978/go-crude/tree/main/go-crud/database"
+	"github.com/Rudyii1978/go-crude/tree/main/go-crud/models"
 	"github.com/gin-gonic/gin"
 )
 
