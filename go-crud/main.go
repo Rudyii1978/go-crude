@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fachi-r/go-crud/controllers"
+	"github.com/Rudyii1978/go-crude/tree/main/go-crud/controllers"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
